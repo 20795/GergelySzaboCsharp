@@ -86,7 +86,7 @@ namespace GergelySzaboCsharp
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            //this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(12, 12);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
@@ -96,6 +96,9 @@ namespace GergelySzaboCsharp
             this.chart1.Size = new System.Drawing.Size(300, 300);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
+            this.chart1.Titles.Add ("Amsterdam - Private rooms");
+            //this.chart1.ChartareaschartArea1].AxisX.Title //sätter namnet på X-axeln
+            this.chart1.ChartAreas[0].AxisY.Title="Price per night";  //sätter namnet på Y-axeln
             chartFilling(amsterdam, chart1);
             // 
             // chart2
@@ -103,7 +106,7 @@ namespace GergelySzaboCsharp
             chartArea2.Name = "ChartArea1";
             this.chart2.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
-            this.chart2.Legends.Add(legend2);
+            //this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(318, 12);
             this.chart2.Name = "chart2";
             series2.ChartArea = "ChartArea1";
@@ -113,6 +116,9 @@ namespace GergelySzaboCsharp
             this.chart2.Size = new System.Drawing.Size(300, 300);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
+            this.chart2.Titles.Add("Barcelona - Private rooms");
+            //this.chart1.ChartareaschartArea1].AxisX.Title //sätter namnet på X-axeln
+            this.chart2.ChartAreas[0].AxisY.Title = "Price per night";  //sätter namnet på Y-axeln
             chartFilling(barcelona, chart2);
             // 
             // chart3
@@ -120,7 +126,7 @@ namespace GergelySzaboCsharp
             chartArea3.Name = "ChartArea1";
             this.chart3.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
-            this.chart3.Legends.Add(legend3);
+            //this.chart3.Legends.Add(legend3);
             this.chart3.Location = new System.Drawing.Point(625, 13);
             this.chart3.Name = "chart3";
             series3.ChartArea = "ChartArea1";
@@ -130,6 +136,9 @@ namespace GergelySzaboCsharp
             this.chart3.Size = new System.Drawing.Size(300, 300);
             this.chart3.TabIndex = 2;
             this.chart3.Text = "chart3";
+            this.chart3.Titles.Add("Boston - Private rooms");
+            //this.chart1.ChartareaschartArea1].AxisX.Title //sätter namnet på X-axeln
+            this.chart3.ChartAreas[0].AxisY.Title = "Price per night";  //sätter namnet på Y-axeln
             chartFilling(boston, chart3);
             // 
             // chart4
