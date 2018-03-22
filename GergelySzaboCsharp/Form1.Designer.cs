@@ -161,7 +161,7 @@ namespace GergelySzaboCsharp
             this.chart4.Series.Add(series4);
             this.chart4.Series["Series1"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point;
 
-            this.chart4.Size = new System.Drawing.Size(910, 300);
+            this.chart4.Size = new System.Drawing.Size(912, 300);
             this.chart4.TabIndex = 3;
             this.chart4.Text = "chart4";
             scatterplotFilling(amsterdam, chart4);
@@ -175,7 +175,7 @@ namespace GergelySzaboCsharp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 692);
+            this.ClientSize = new System.Drawing.Size(940, 640);
             
             this.Controls.Add(this.chart4);
             this.Controls.Add(this.chart3);

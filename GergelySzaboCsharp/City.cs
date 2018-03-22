@@ -23,7 +23,7 @@ namespace GergelySzaboCsharp
             this.nrOfTouristsPerYear = nrOfTuristsPerYear;
             accommodationList = new List<Accommodation>();
             this.PopulatingAccList();
-            this.nrOfAccommodations = accommodationList.Count;
+            this.nrOfAccommodations = 0;
             this.avrageCostPerNight = 0;
         }
         public string Name { get => name; set => name = value; }
@@ -65,8 +65,11 @@ namespace GergelySzaboCsharp
                         myReader[16].ToString() ?? "null"
                     )
                 );
+                avrageCostPerNight = avrageCostPerNight + int.Parse(myReader[13].ToString() ?? "0");
                 x++;
             }
+            nrOfAccommodations = accommodationList.Count;
+            avrageCostPerNight = avrageCostPerNight/accommodationList.Count;
             conn.Close();
         }
     }
